@@ -1,0 +1,47 @@
+[
+  {
+    "category": "Languages",
+    "items": [
+      { "name": "TypeScript", "icon": null },
+      { "name": "JavaScript", "icon": null },
+      { "name": "PHP", "icon": null},
+      { "name": "Python", "icon": null },
+      { "name": "SQL", "icon": null },
+      { "name": "HTML/CSS", "icon": null }
+    ]
+  },
+  {
+    "category": "Frameworks",
+    "items": [
+      { "name": "Next.js", "icon": null },
+      { "name": "React", "icon": null },
+      { "name": "Nuxt.js", "icon": null },
+      { "name": "Node.js", "icon": null },
+      { "name": "Laravel", "icon": null},
+      { "name": "Codeigniter", "icon": null},
+      { "name": "Express", "icon": null },
+      { "name": "Tailwind CSS", "icon": null },
+      { "name": "Bootstrap CSS", "icon": null }
+    ]
+  },
+  {
+    "category": "Databases",
+    "items": [
+      { "name": "PostgreSQL", "icon": null },
+      { "name": "MongoDB", "icon": null },
+      { "name": "Mysql", "icon": null },
+      { "name": "Supabase", "icon": null }
+    ]
+  },
+  {
+    "category": "Tools",
+    "items": [
+      { "name": "Git", "icon": null },
+      { "name": "Docker", "icon": null },
+      { "name": "Postman", "icon": null },
+      { "name": "Vercel", "icon": null },
+      { "name": "Figma", "icon": null },
+      { "name": "VS Code", "icon": null }
+    ]
+  }
+]

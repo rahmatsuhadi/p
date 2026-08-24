@@ -1,0 +1,13 @@
+{
+  "name": "Rahmat Suhadi",
+  "title": "Web Developer",
+  "tagline": "Building reliable web applications with clean code and thoughtful architecture.",
+  "avatarUrl": "/images/me.webp",
+  "resumeUrl": "/resume.pdf",
+  "about": "Seorang fullstack developer dengan pengalaman membangun aplikasi web dari konsep hingga production. Fokus pada clean code, performa, dan user experience yang intuitif.\n\nMemiliki ketertarikan besar pada arsitektur sistem, design patterns, dan developer tooling. Percaya bahwa kode yang baik adalah kode yang mudah dibaca, mudah di-maintain, dan mudah di-test.\n\nDi luar coding, suka mengeksplorasi teknologi baru, menulis catatan teknis, dan berkontribusi pada project open source.",
+  "socials": {
+    "github": "https://github.com/rahmatsuhadi",
+    "linkedin": "https://linkedin.com/in/rahmat-suhadi",
+    "email": "rahmatsuhadi32@gmail.com"
+  }
+}

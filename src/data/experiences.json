@@ -1,0 +1,35 @@
+[
+  {
+    "company": "Dinas Koperasi dan UKM Kabupaten Sleman (Contract/ Project-Based)",
+    "position": "Frontend Developer",
+    "startDate": "2025-08",
+    "endDate": "2025-12",
+    "contributions": [
+      "Mengeksekusi migrasi frontend katalog UMKM dari web statis ke Next.js & Tailwind CSS, mentransformasi alur pemesanan manual WhatsApp menjadi sistem checkout mandiri yang terintegrasi.",
+      "Mengimplementasikan desain Figma secara presisi dan mengintegrasikan fitur e-commerce end-to-end (Auth, Katalog, Keranjang, & Profil Pengguna) dengan Laravel REST API.",
+      "Mengoptimalkan performa web & SEO lintas perangkat serta mengelola proses deployment ke server VPS untuk mendukung operasional para pelaku UMKM binaan."
+    ]
+  },
+  {
+    "company": "Daya Gagas Internasional (Internship)",
+    "position": "Frontend Developer Intern",
+    "startDate": "2025-08",
+    "endDate": "2025-12",
+    "contributions": [
+      "Membangun modul inti sistem Pengelolaan Proyek Konstruksi berbasis Nuxt.js, Nuxt UI, dan Tailwind CSS, mencakup manajemen berkas proyek, otorisasi member, hingga sistem approval workflow.",
+      "Mengeksekusi redesign 2 website company profile dan landing page dari desain Figma, mengoptimalkan tampilan responsif serta kecepatan akses web.",
+      "Melakukan refactoring codebase dan penyesuaian arsitektur web eksisting untuk meningkatkan maintainability serta efisiensi alur bisnis klien."
+    ]
+  },
+  {
+    "company": "Carakan Sadha Dirgantara",
+    "position": "Web Developer",
+    "startDate": "2021-11",
+    "endDate": "2025-05",
+    "contributions": [
+      "Membangun dan memelihara 3+ platform web internal perusahaan menggunakan Next.js & React untuk mendukung produktivitas dan alur kerja tim.",
+      "Mengembangkan berbagai aplikasi web klien end-to-end dengan fokus pada clean code, performa tinggi, dan integrasi REST API yang handal.",
+      "Menerjemahkan rancangan desain Figma menjadi antarmuka pixel-perfect yang responsif dan konsisten lintas perangkat."
+    ]
+  }
+]
