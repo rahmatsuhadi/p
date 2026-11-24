@@ -48,18 +48,11 @@ export async function generateMetadata({
       locale: "id_ID",
       url: `${siteUrl}/projects/${project.slug}`,
       siteName: "Rahmat Suhadi",
-      images: [
-        {
-          url: project.thumbnail,
-          alt: project.name,
-        },
-      ],
     },
     twitter: {
       card: "summary_large_image",
       title: `${project.name} | Rahmat Suhadi`,
       description: project.shortDescription,
-      images: [project.thumbnail],
     },
   };
 }

@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { getSiteUrl } from "@/lib/data";
 
 export const alt = "Rahmat Suhadi | Frontend & Fullstack Developer";
 export const size = {
@@ -8,6 +9,8 @@ export const size = {
 export const contentType = "image/png";
 
 export default function OpenGraphImage() {
+  const host = new URL(getSiteUrl()).host;
+
   return new ImageResponse(
     <div
       style={{
@@ -35,22 +38,37 @@ export default function OpenGraphImage() {
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "12px",
-            fontSize: "20px",
-            color: "#F26B3A",
-            letterSpacing: "0.08em",
-            textTransform: "uppercase",
+            gap: "16px",
           }}
         >
           <div
             style={{
-              width: "12px",
-              height: "12px",
-              borderRadius: "9999px",
-              backgroundColor: "#F26B3A",
+              width: "40px",
+              height: "40px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundColor: "#14181F",
+              border: "1px solid #252C38",
+              borderRadius: "10px",
+              fontSize: "22px",
+              fontWeight: 700,
+              letterSpacing: "-0.04em",
             }}
-          />
-          <span>PORTOFOLIO</span>
+          >
+            <span style={{ color: "#F3F5F8" }}>M</span>
+            <span style={{ color: "#F26B3A" }}>.</span>
+          </div>
+          <span
+            style={{
+              fontSize: "20px",
+              color: "#F26B3A",
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
+            }}
+          >
+            PORTOFOLIO
+          </span>
         </div>
         <span style={{ fontSize: "20px", color: "#9AA4B2" }}>
           Yogyakarta, ID
@@ -101,7 +119,7 @@ export default function OpenGraphImage() {
         }}
       >
         <span>Antarmuka web yang rapi, cepat, dan mudah dirawat</span>
-        <span style={{ color: "#F26B3A" }}>rahmatsuhadi.dev</span>
+        <span style={{ color: "#F26B3A" }}>{host}</span>
       </div>
     </div>,
     size,
