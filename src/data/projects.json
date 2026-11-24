@@ -2,6 +2,8 @@
   {
     "slug": "khayangan-cloud-orchestrator",
     "name": "Khayangan",
+    "category": "Sistem & Cloud",
+    "featured": true,
     "shortDescription": "Portal dashboard end-user untuk provisioning, kustomisasi spesifikasi, dan monitoring server/VPS cloud.",
     "fullDescription": "Khayangan adalah ekosistem cloud hybrid multi-service (Core Infra, Reseller/Penjual, dan End-User). Berperan sebagai Frontend Engineer pada portal End-User, fokus membangun antarmuka mandiri bagi pelanggan untuk merancang spesifikasi server (CPU, RAM, Storage, OS), melakukan pemesanan VPS, serta memantau status VM mereka secara real-time.",
     "position": "Frontend Engineer (End-User Portal)",
@@ -15,9 +17,20 @@
       "Mengembangkan dashboard monitoring status instance VM (start, stop, reboot status) yang mengonsumsi REST API internal.",
       "Mengimplementasikan state management dan validasi form dinamis untuk mencegah kesalahan input konfigurasi sebelum order disubmit."
     ],
-    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "REST API Consumption", "Zustand"],
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST API Consumption",
+      "Zustand"
+    ],
     "techStackReasons": "Next.js App Router dan TypeScript memastikan performa rendering cepat dan type-safety saat mengonsumsi schema response yang kompleks dari backend service. Tailwind CSS digunakan untuk merancang antarmuka dashboard modern yang rapi dan data-dense.",
-    "screenshots": ["/images/projects/khayangan-1.webp","/images/projects/khayangan-3.webp","/images/projects/khayangan-2.webp","/images/projects/khayangan-4.webp"],
+    "screenshots": [
+      "/images/projects/khayangan-1.webp",
+      "/images/projects/khayangan-3.webp",
+      "/images/projects/khayangan-2.webp",
+      "/images/projects/khayangan-4.webp"
+    ],
     "liveUrl": null,
     "repoUrl": null,
     "thumbnail": "/images/projects/khayangan-1.webp"
@@ -25,6 +38,8 @@
   {
     "slug": "parisada-meet",
     "name": "Parisada Meet Conference",
+    "category": "Sistem & Cloud",
+    "featured": true,
     "shortDescription": "Platform video conference internal perusahaan berbasis LiveKit SFU dengan enkripsi data dan private recording.",
     "fullDescription": "Parisada Meet adalah platform komunikasi audio-visual end-to-end internal untuk rapat strategis perusahaan. Mengembangkan sisi frontend (antarmuka meeting room interaktif) dan backend (orkestrasi LiveKit SFU server, room token authentication, serta penyimpanan recording privat) untuk mengeliminasi ketergantungan pada SaaS pihak ketiga.",
     "position": "Fullstack Engineer",
@@ -39,9 +54,21 @@
       "Merancang antarmuka ruang rapat interaktif lengkap dengan screen sharing, speaker indicator, layout grid dinamis, dan in-room chat.",
       "Mengimplementasikan pipeline recording server-side yang otomatis menyimpan rekaman rapat ke private S3 storage."
     ],
-    "techStack": ["Next.js", "TypeScript", "Node.js", "LiveKit SFU", "WebRTC", "Tailwind CSS", "Zustand"],
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "LiveKit SFU",
+      "WebRTC",
+      "Tailwind CSS",
+      "Zustand"
+    ],
     "techStackReasons": "LiveKit SFU dipilih karena jauh lebih scalable dan hemat bandwidth dibanding arsitektur WebRTC mesh. Next.js dan Node.js menyatukan frontend interaktif dan secure API backend untuk generate token serta orkestrasi room secara aman.",
-    "screenshots": ["/images/projects/parisada-3.webp","/images/projects/parisada-2.webp","/images/projects/parisada-1.webp"],
+    "screenshots": [
+      "/images/projects/parisada-3.webp",
+      "/images/projects/parisada-2.webp",
+      "/images/projects/parisada-11.webp"
+    ],
     "liveUrl": null,
     "repoUrl": null,
     "thumbnail": "/images/projects/parisada-3.webp"
@@ -49,6 +76,8 @@
   {
     "slug": "taman-budaya-yogyakarta",
     "name": "Taman Budaya Yogyakarta Booking System",
+    "category": "Publik & Bisnis",
+    "featured": false,
     "shortDescription": "Sistem reservasi dan pengelolaan penyewaan gedung seni publik berbasis web untuk Taman Budaya Yogyakarta.",
     "fullDescription": "Digitalisasi sistem booking fasilitas dan gedung kesenian di Taman Budaya Yogyakarta. Mentransformasikan alur penyewaan yang sebelumnya manual dan offline menjadi sistem reservasi terpadu yang transparan, lengkap dengan verifikasi berkas dan approval bertingkat.",
     "position": "Fullstack Web Developer",
@@ -64,15 +93,20 @@
     ],
     "techStack": ["Yii2", "PHP", "Bootstrap", "MySQL", "jQuery"],
     "techStackReasons": "Yii2 dipilih karena arsitektur MVC yang robust, ekosistem RBAC bawaan untuk membedakan hak akses admin/staf dinas, serta performa query builder yang stabil pada database relasional MySQL.",
-    "screenshots": ["/images/projects/tby-3.webp", "/images/projects/tby-1.webp","/images/projects/tby-2.webp"],
+    "screenshots": [
+      "/images/projects/tby-3.webp",
+      "/images/projects/tby-1.webp",
+      "/images/projects/tby-2.webp"
+    ],
     "liveUrl": null,
     "repoUrl": null,
     "thumbnail": "/images/projects/tby-3.webp"
   },
-
   {
     "slug": "cde-construction-management",
-    "name": "CDE – Common Data Environment",
+    "name": "CDE: Common Data Environment",
+    "category": "Sistem & Cloud",
+    "featured": true,
     "shortDescription": "Modul File Manager dan approval workflow berkas konstruksi digital pada platform Common Data Environment.",
     "fullDescription": "Platform CDE untuk sektor perencanaan dan pembangunan sipil. Berperan sebagai Frontend Engineer yang bertanggung jawab khusus membangun modul inti File Manager (tree view, manipulasi file, versioning) dan visualisasi alur persetujuan (approval workflow) gambar kerja lintas kontraktor, arsitek, dan pemilik proyek.",
     "position": "Frontend Engineer (File Manager & Workflow Modules)",
@@ -88,7 +122,11 @@
     ],
     "techStack": ["Nuxt.js", "Vue.js", "Tailwind CSS", "Pinia", "REST API"],
     "techStackReasons": "Nuxt.js dan Vue 3 Composition API menawarkan sistem reaktivitas yang efisien untuk menangani manipulasi tree file manager yang dalam dan rendering state dokumen via Pinia.",
-    "screenshots": ["/images/projects/cde-1.webp","/images/projects/cde-2.webp","/images/projects/cde-3.webp"],
+    "screenshots": [
+      "/images/projects/cde-1.webp",
+      "/images/projects/cde-2.webp",
+      "/images/projects/cde-3.webp"
+    ],
     "liveUrl": null,
     "repoUrl": null,
     "thumbnail": "/images/projects/cde-1.webp"
@@ -96,6 +134,8 @@
   {
     "slug": "tridaya-infrastructure-monitoring",
     "name": "Tridaya Merauke",
+    "category": "Publik & Bisnis",
+    "featured": false,
     "shortDescription": "Platform monitoring progres fisik dan realisasi pembangunan infrastruktur daerah Kabupaten Merauke.",
     "fullDescription": "Re-engineering dan peremajaan antarmuka sistem monitoring pembangunan infrastruktur publik di Kabupaten Merauke. Menyajikan visualisasi data proyek jalan, jembatan, dan fasilitas umum untuk membantu dinas terkait memantau progres lapangan secara real-time.",
     "position": "Frontend Engineer",
@@ -111,7 +151,10 @@
     ],
     "techStack": ["Nuxt.js", "Vue.js", "Tailwind CSS", "Chart.js", "REST API"],
     "techStackReasons": "Nuxt.js memudahkan modularitas komponen dashboard, dipadukan dengan Chart.js yang ringan untuk merender visualisasi data progres tanpa membebani performa browser.",
-    "screenshots": ["/images/projects/tridaya-1.webp", "/images/projects/tridaya-2.webp"],
+    "screenshots": [
+      "/images/projects/tridaya-1.webp",
+      "/images/projects/tridaya-2.webp"
+    ],
     "liveUrl": null,
     "repoUrl": null,
     "thumbnail": "/images/projects/tridaya-1.webp"
@@ -119,6 +162,8 @@
   {
     "slug": "jalanin-portal",
     "name": "Jalanin & Internship Portal",
+    "category": "Publik & Bisnis",
+    "featured": false,
     "shortDescription": "Redesain portal profil korporat dan platform informasi program magang berbasis web.",
     "fullDescription": "Proyek peremajaan website profil korporat Jalanin dan portal pendaftaran magang. Mengubah tampilan website lama menjadi antarmuka modern yang merefleksikan identitas brand perusahaan serta mempermudah calon kandidat menemukan informasi lowongan magang.",
     "position": "Frontend Developer",
@@ -134,14 +179,20 @@
     ],
     "techStack": ["Nuxt.js", "Vue.js", "Tailwind CSS"],
     "techStackReasons": "Nuxt.js memberikan performa load yang instan dan kemudahan konfigurasi metadata SEO, sementara Tailwind CSS memastikan konsistensi desain di seluruh breakpoint layar.",
-    "screenshots": ["/images/projects/jalanin-1.webp","/images/projects/jalanin-2.webp","/images/projects/jalanin-3.webp"],
+    "screenshots": [
+      "/images/projects/jalanin-1.webp",
+      "/images/projects/jalanin-2.webp",
+      "/images/projects/jalanin-3.webp"
+    ],
     "liveUrl": null,
     "repoUrl": null,
     "thumbnail": "/images/projects/jalanin-1.webp"
   },
   {
     "slug": "sleman-mart",
-    "name": "Sleman Mart – Customer Storefront",
+    "name": "Sleman Mart: Customer Storefront",
+    "category": "Publik & Bisnis",
+    "featured": false,
     "shortDescription": "Storefront e-commerce modern berbasis Next.js untuk katalog produk dan pemesanan UMKM Kabupaten Sleman.",
     "fullDescription": "Sleman Mart adalah ekosistem marketplace UMKM lokal yang terbagi menjadi dua service: Backend & Admin/Merchant Panel (Laravel) dan Customer Web Portal (Next.js). Berperan sebagai Frontend Engineer pada sisi Customer Portal, membangun web storefront cepat yang memungkinkan publik menjelajahi produk UMKM lokal, mengelola keranjang, dan melakukan pemesanan langsung tanpa chat manual.",
     "position": "Frontend Engineer (Customer Portal)",
@@ -155,9 +206,19 @@
       "Mengimplementasikan fitur dynamic product listing, instant search, filter kategori UMKM, dan shopping cart.",
       "Mendesain alur checkout yang intuitif untuk mempermudah pembeli menyelesaikan transaksi pesanan secara mandiri."
     ],
-    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "REST API Consumption"],
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST API Consumption"
+    ],
     "techStackReasons": "Next.js App Router dipilih untuk memaksimalkan performa loading dan SEO halaman produk UMKM lokal, dipadukan dengan Tailwind CSS untuk styling komponen katalog yang responsif di mobile.",
-    "screenshots": ["/images/projects/slemanmart-4.webp","/images/projects/slemanmart-3.webp","/images/projects/slemanmart-1.webp","/images/projects/slemanmart-2.webp"],
+    "screenshots": [
+      "/images/projects/slemanmart-4.webp",
+      "/images/projects/slemanmart-3.webp",
+      "/images/projects/slemanmart-1.webp",
+      "/images/projects/slemanmart-2.webp"
+    ],
     "liveUrl": null,
     "repoUrl": null,
     "thumbnail": "/images/projects/slemanmart-4.webp"
@@ -165,6 +226,8 @@
   {
     "slug": "karthi-arta",
     "name": "Karthi Arta",
+    "category": "Produk Mandiri",
+    "featured": true,
     "shortDescription": "Aplikasi personal money tracker berbasis PWA offline-first dengan integrasi AI receipt scanner.",
     "fullDescription": "Aplikasi pencatatan keuangan pribadi open-source yang dirancang untuk mengatasi friksi pencatatan manual. Mengusung konsep offline-first sehingga dapat digunakan kapan saja tanpa sinyal internet, serta dilengkapi integrasi AI Vision untuk ekstraksi data struk belanja secara otomatis.",
     "position": "Creator & Fullstack Developer",
@@ -178,9 +241,20 @@
       "Mengintegrasikan AI Multimodal / Vision API untuk memindai foto struk belanja dan mengekstraksi nominal, tanggal, serta kategori pengeluaran secara otomatis.",
       "Menyediakan sistem background sync saat perangkat kembali online dan dashboard ringkasan cashflow interaktif."
     ],
-    "techStack": ["Next.js", "TypeScript", "PWA", "IndexedDB", "Tailwind CSS", "Gemini AI API"],
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "PWA",
+      "IndexedDB",
+      "Tailwind CSS",
+      "Gemini AI API"
+    ],
     "techStackReasons": "PWA dan IndexedDB memberikan kecepatan akses layaknya aplikasi native tanpa friction unduhan app store dan reliabel 100% offline. Gemini AI API memangkas waktu pencatatan struk belanja dalam hitungan detik.",
-    "screenshots": ["/images/projects/kanthi-1.webp","/images/projects/kanthi-2.webp","/images/projects/kanthi-3.webp"],
+    "screenshots": [
+      "/images/projects/kanthi-1.webp",
+      "/images/projects/kanthi-2.webp",
+      "/images/projects/kanthi-3.webp"
+    ],
     "liveUrl": null,
     "repoUrl": "https://github.com/mattz/karthi-arta",
     "thumbnail": "/images/projects/kanthi-1.webp"

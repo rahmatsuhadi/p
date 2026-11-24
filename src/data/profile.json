@@ -1,10 +1,10 @@
 {
   "name": "Rahmat Suhadi",
-  "title": "Web Developer",
-  "tagline": "Building reliable web applications with clean code and thoughtful architecture.",
+  "title": "Frontend & Fullstack Developer",
+  "tagline": "Saya membangun antarmuka web yang rapi, cepat, dan nyaman dipakai. Fokus di frontend, namun terbiasa menangani sisi backend saat produk membutuhkannya.",
   "avatarUrl": "/images/me.webp",
   "resumeUrl": "/resume.pdf",
-  "about": "Seorang fullstack developer dengan pengalaman membangun aplikasi web dari konsep hingga production. Fokus pada clean code, performa, dan user experience yang intuitif.\n\nMemiliki ketertarikan besar pada arsitektur sistem, design patterns, dan developer tooling. Percaya bahwa kode yang baik adalah kode yang mudah dibaca, mudah di-maintain, dan mudah di-test.\n\nDi luar coding, suka mengeksplorasi teknologi baru, menulis catatan teknis, dan berkontribusi pada project open source.",
+  "about": "Saya Rahmat Suhadi, developer berbasis di Yogyakarta yang sehari-hari membangun aplikasi web menggunakan React, Next.js, Nuxt.js, dan TypeScript.\n\nSaat membangun antarmuka, saya menjaga tampilan tetap rapi sekaligus memastikan kodenya mudah dirawat dan ringan di berbagai perangkat. Saya terbiasa bekerja langsung dengan desainer maupun tim backend untuk menerjemahkan ide dan rancangan menjadi produk yang siap dipakai pengguna.\n\nDi luar pekerjaan utama, saya senang mengeksplorasi detail interaksi UI, mencoba teknik animasi web baru, dan berkontribusi di proyek open source.",
   "socials": {
     "github": "https://github.com/rahmatsuhadi",
     "linkedin": "https://linkedin.com/in/rahmat-suhadi",

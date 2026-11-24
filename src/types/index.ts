@@ -12,9 +12,16 @@ export interface Profile {
   };
 }
 
+export type ProjectCategory =
+  | "Sistem & Cloud"
+  | "Publik & Bisnis"
+  | "Produk Mandiri";
+
 export interface Project {
   slug: string;
   name: string;
+  category: ProjectCategory;
+  featured?: boolean;
   shortDescription: string;
   fullDescription: string;
   position: string;

@@ -2,46 +2,46 @@
   {
     "category": "Languages",
     "items": [
-      { "name": "TypeScript", "icon": null },
-      { "name": "JavaScript", "icon": null },
-      { "name": "PHP", "icon": null},
-      { "name": "Python", "icon": null },
+      { "name": "TypeScript", "icon": "typescript" },
+      { "name": "JavaScript", "icon": "javascript" },
+      { "name": "PHP", "icon": "php" },
+      { "name": "Python", "icon": "python" },
       { "name": "SQL", "icon": null },
-      { "name": "HTML/CSS", "icon": null }
+      { "name": "HTML/CSS", "icon": "html5" }
     ]
   },
   {
     "category": "Frameworks",
     "items": [
-      { "name": "Next.js", "icon": null },
-      { "name": "React", "icon": null },
-      { "name": "Nuxt.js", "icon": null },
-      { "name": "Node.js", "icon": null },
-      { "name": "Laravel", "icon": null},
-      { "name": "Codeigniter", "icon": null},
-      { "name": "Express", "icon": null },
-      { "name": "Tailwind CSS", "icon": null },
-      { "name": "Bootstrap CSS", "icon": null }
+      { "name": "Next.js", "icon": "nextdotjs" },
+      { "name": "React", "icon": "react" },
+      { "name": "Nuxt.js", "icon": "nuxtdotjs" },
+      { "name": "Node.js", "icon": "nodedotjs" },
+      { "name": "Laravel", "icon": "laravel" },
+      { "name": "Codeigniter", "icon": "codeigniter" },
+      { "name": "Express", "icon": "express" },
+      { "name": "Tailwind CSS", "icon": "tailwindcss" },
+      { "name": "Bootstrap CSS", "icon": "bootstrap" }
     ]
   },
   {
     "category": "Databases",
     "items": [
-      { "name": "PostgreSQL", "icon": null },
-      { "name": "MongoDB", "icon": null },
-      { "name": "Mysql", "icon": null },
-      { "name": "Supabase", "icon": null }
+      { "name": "PostgreSQL", "icon": "postgresql" },
+      { "name": "MongoDB", "icon": "mongodb" },
+      { "name": "MySQL", "icon": "mysql" },
+      { "name": "Supabase", "icon": "supabase" }
     ]
   },
   {
     "category": "Tools",
     "items": [
-      { "name": "Git", "icon": null },
-      { "name": "Docker", "icon": null },
-      { "name": "Postman", "icon": null },
-      { "name": "Vercel", "icon": null },
-      { "name": "Figma", "icon": null },
-      { "name": "VS Code", "icon": null }
+      { "name": "Git", "icon": "git" },
+      { "name": "Docker", "icon": "docker" },
+      { "name": "Postman", "icon": "postman" },
+      { "name": "Vercel", "icon": "vercel" },
+      { "name": "Figma", "icon": "figma" },
+      { "name": "VS Code", "icon": "visualstudiocode" }
     ]
   }
 ]
