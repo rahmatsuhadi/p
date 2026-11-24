@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import {
   Bricolage_Grotesque,
   IBM_Plex_Mono,
@@ -31,6 +31,13 @@ const ibmMono = IBM_Plex_Mono({
 
 const siteUrl = getSiteUrl();
 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#0C0E12" },
+    { media: "(prefers-color-scheme: light)", color: "#F6F7F9" },
+  ],
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -38,7 +45,32 @@ export const metadata: Metadata = {
     template: "%s | Rahmat Suhadi",
   },
   description:
-    "Portofolio Rahmat Suhadi, Frontend & Fullstack Developer berbasis di Yogyakarta. Membangun antarmuka web yang rapi, cepat, dan mudah dirawat menggunakan React, Next.js, Nuxt.js, dan TypeScript.",
+    "Portofolio Rahmat Suhadi, Frontend & Fullstack Developer di Yogyakarta. Membangun aplikasi web yang rapi dan cepat dengan React, Next.js, dan TypeScript.",
+  authors: [{ name: "Rahmat Suhadi", url: siteUrl }],
+  creator: "Rahmat Suhadi",
+  publisher: "Rahmat Suhadi",
+  keywords: [
+    "Rahmat Suhadi",
+    "Frontend Developer",
+    "Fullstack Developer",
+    "React",
+    "Next.js",
+    "Nuxt.js",
+    "TypeScript",
+    "Yogyakarta",
+    "Portofolio Web Developer",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   alternates: {
     canonical: "/",
   },
@@ -49,21 +81,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "id_ID",
     url: siteUrl,
-    images: [
-      {
-        url: "/images/me.webp",
-        width: 800,
-        height: 800,
-        alt: "Rahmat Suhadi",
-      },
-    ],
+    siteName: "Rahmat Suhadi",
   },
   twitter: {
     card: "summary_large_image",
     title: "Rahmat Suhadi | Frontend & Fullstack Developer",
     description:
       "Frontend & Fullstack Developer berbasis di Yogyakarta. Fokus di React, Next.js, Nuxt.js, dan TypeScript.",
-    images: ["/images/me.webp"],
   },
 };
 
@@ -95,7 +119,7 @@ export default function RootLayout({
           >
             Loncat ke konten utama
           </a>
-          <Navbar resumeUrl={profile.resumeUrl} email={profile.socials.email} />
+          <Navbar resumeUrl={profile.resumeUrl} />
           {children}
         </ThemeProvider>
       </body>

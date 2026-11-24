@@ -25,13 +25,31 @@ export default function Home() {
   const skills = getSkills();
   const siteUrl = getSiteUrl();
 
+  const knowsAbout = skills.flatMap((category) =>
+    category.items.map((item) => item.name),
+  );
+  const alumniOf = education.map((edu) => ({
+    "@type": "EducationalOrganization",
+    name: edu.institution,
+  }));
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "ProfilePage",
+        url: siteUrl,
+        inLanguage: "id-ID",
+        mainEntity: {
+          "@id": `${siteUrl}/#person`,
+        },
+      },
+      {
         "@type": "Person",
+        "@id": `${siteUrl}/#person`,
         name: profile.name,
         jobTitle: profile.title,
+        description: profile.tagline,
         url: siteUrl,
         image: `${siteUrl}${profile.avatarUrl}`,
         email: `mailto:${profile.socials.email}`,
@@ -41,12 +59,17 @@ export default function Home() {
           addressCountry: "ID",
         },
         sameAs: [profile.socials.github, profile.socials.linkedin],
+        knowsAbout,
+        alumniOf,
       },
       {
         "@type": "WebSite",
         name: `${profile.name} Portfolio`,
         url: siteUrl,
         inLanguage: "id-ID",
+        publisher: {
+          "@id": `${siteUrl}/#person`,
+        },
       },
     ],
   };

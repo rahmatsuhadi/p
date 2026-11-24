@@ -210,7 +210,7 @@ A strict, purposeful radius hierarchy distinguishes interactive pills from struc
 
 ### Buttons & CTA Vocabulary
 - Use one consistent label per intent across the entire site: `"View Projects"` (or `"Explore Work"` -> pick one and reuse), `"Get in touch"` (for `mailto:` contact), and `"Download Resume"` (or `"Resume (Soon)"` while pending).
-- **Dummy Resume Placeholder Policy:** Until `public/resume.pdf` is supplied by the owner, the Resume CTA must render as an honest, functional placeholder (e.g., clearly labeled `"Resume (Coming Soon)"` or triggering a clean inline toast/notice rather than a broken `404` file download), marked with `// TODO: replace with real /resume.pdf` in source.
+- **Resume CTA:** Direct PDF download pointing to `/resume.pdf` (`download="CV-Rahmat-Suhadi.pdf"`), labeled consistently `"Unduh CV"` across Navbar, Hero, and Footer.
 - Primary pill buttons use `Ink Light` on `Obsidian` (dark) or `Ink Dark` on `Paper` (light), with tactile press feedback (`active:scale-[0.98]`).
 - All interactive controls (`a[href]`, `button`, `[role="button"]`) must declare `cursor: pointer`, minimum `44px` touch target on mobile, and a visible `2px` Signal Vermilion `:focus-visible` ring.
 

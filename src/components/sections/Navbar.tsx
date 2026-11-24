@@ -15,10 +15,9 @@ const navLinks = [
 
 interface NavbarProps {
   resumeUrl: string;
-  email: string;
 }
 
-export function Navbar({ resumeUrl, email }: NavbarProps) {
+export function Navbar({ resumeUrl }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const navRef = useRef<HTMLElement>(null);
@@ -152,7 +151,7 @@ export function Navbar({ resumeUrl, email }: NavbarProps) {
             </button>
 
             <div className="hidden md:block">
-              <ResumeButton resumeUrl={resumeUrl} email={email} variant="nav" />
+              <ResumeButton resumeUrl={resumeUrl} variant="nav" />
             </div>
 
             <button
@@ -198,11 +197,7 @@ export function Navbar({ resumeUrl, email }: NavbarProps) {
           ))}
 
           <div data-drawer-item className="mt-4">
-            <ResumeButton
-              resumeUrl={resumeUrl}
-              email={email}
-              variant="primary"
-            />
+            <ResumeButton resumeUrl={resumeUrl} variant="primary" />
           </div>
         </div>
       )}

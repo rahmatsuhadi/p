@@ -68,5 +68,7 @@ export function getSkills(): SkillCategory[] {
 }
 
 export function getSiteUrl(): string {
-  return process.env.NEXT_PUBLIC_SITE_URL || "https://rahmatsuhadi.dev";
+  return (
+    process.env.NEXT_PUBLIC_SITE_URL || "https://mattz.my.id"
+  ).replace(/\/+$/, "");
 }

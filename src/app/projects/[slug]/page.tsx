@@ -33,6 +33,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const project = getProjectBySlug(slug);
   if (!project) return { title: "Proyek Tidak Ditemukan" };
+  const siteUrl = getSiteUrl();
 
   return {
     title: project.name,
@@ -44,12 +45,21 @@ export async function generateMetadata({
       title: `${project.name} | Rahmat Suhadi`,
       description: project.shortDescription,
       type: "article",
+      locale: "id_ID",
+      url: `${siteUrl}/projects/${project.slug}`,
+      siteName: "Rahmat Suhadi",
       images: [
         {
           url: project.thumbnail,
           alt: project.name,
         },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.name} | Rahmat Suhadi`,
+      description: project.shortDescription,
+      images: [project.thumbnail],
     },
   };
 }
@@ -65,16 +75,45 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    name: project.name,
-    description: project.fullDescription,
-    url: `${siteUrl}/projects/${project.slug}`,
-    image: `${siteUrl}${project.thumbnail}`,
-    author: {
-      "@type": "Person",
-      name: profile.name,
-    },
-    keywords: project.techStack.join(", "),
+    "@graph": [
+      {
+        "@type": "CreativeWork",
+        inLanguage: "id-ID",
+        name: project.name,
+        description: project.fullDescription,
+        url: `${siteUrl}/projects/${project.slug}`,
+        image: `${siteUrl}${project.thumbnail}`,
+        author: {
+          "@type": "Person",
+          name: profile.name,
+          url: siteUrl,
+        },
+        keywords: project.techStack.join(", "),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Beranda",
+            item: siteUrl,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Proyek",
+            item: `${siteUrl}/#projects`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: project.name,
+            item: `${siteUrl}/projects/${project.slug}`,
+          },
+        ],
+      },
+    ],
   };
 
   return (

@@ -79,11 +79,7 @@ export function Footer({ profile }: FooterProps) {
                 <EnvelopeSimple size={16} weight="bold" aria-hidden="true" />
                 Kirim Email
               </a>
-              <ResumeButton
-                resumeUrl={profile.resumeUrl}
-                email={profile.socials.email}
-                variant="secondary"
-              />
+              <ResumeButton resumeUrl={profile.resumeUrl} variant="secondary" />
             </div>
           </div>
 

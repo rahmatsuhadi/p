@@ -220,11 +220,7 @@ export function HeroSection({ profile }: HeroSectionProps) {
                 <ArrowRight size={16} weight="bold" aria-hidden="true" />
               </Link>
 
-              <ResumeButton
-                resumeUrl={profile.resumeUrl}
-                email={profile.socials.email}
-                variant="secondary"
-              />
+              <ResumeButton resumeUrl={profile.resumeUrl} variant="secondary" />
 
               <div className="flex items-center gap-1 sm:ml-2">
                 <a
